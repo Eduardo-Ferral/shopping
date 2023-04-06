@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Footer(){
     return(
-        <div className='w-full absolute bottom-0'> 
+        <div className='w-full  bottom-0'> 
         <div className='  bg-gray-800   text-white justify-between flex '>
             <div className=' flex flex-col p-1 w-2/4 sm:w-4/5 sm:flex-row sm:justify-around [&_div]:my-1 ' >
                 <div className= ' rounded-md md:text-left' >
                     <h3 className=' font-bold text-lg text ' >Conocenos</h3>
                     <ul className=' p-1 text-sm  ' >
-                    <li><a href='#' className=' hover:text-indigo-400  hover:border  border-teal-200 hover:rounded-sm hover:ring-emerald-400'>Sobre Nosotros </a> </li>
-                    <li><a href='#' className='hover:text-indigo-400'>Informacion corporativa </a></li>
+                    <li><Link to={"nosotros"} className=' hover:text-indigo-400  hover:border  border-teal-200 hover:rounded-sm hover:ring-emerald-400'>Sobre Nosotros </Link> </li>
+                    <li><Link to={`sesion`} className='hover:text-indigo-400'>Informacion corporativa </Link></li>
                     <li><a href='#' className='hover:text-indigo-400'>Trabajo ShoppingCart </a></li>
                     <li>Vender en Shopping</li>
                     </ul>
